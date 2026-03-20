@@ -7,44 +7,111 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- TOP BAR -->
-<div class="top-bar">
-  <div class="container">
-    <div class="left">
-      <span>📞 +1 844-646-0118</span>
-      <span>✉️ admin@houstonridesharecar.com</span>
+ <!-- TOP BAR -->
+  <div class="jl-nav-topbar">
+    <div class="jl-nav-topbar-left">
+      <div class="jl-nav-topbar-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>+1 (832)4892395</span>
+      </div>
+
+      <div class="jl-nav-topbar-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Info@bloomridesharerentalcarz.com</span>
+      </div>
     </div>
-    <div class="right">
-      <span>f</span>
-      <span>ig</span>
-      <span>t</span>
+
+    <div class="jl-nav-topbar-right">
+      <div class="jl-nav-socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-container">
-    <div class="logo">
-      <img src="/6__2_-removebg-preview.png" alt="logo">
-    </div>
+  <!-- MAIN NAV -->
+  <div class="jl-nav-shell">
+    <nav class="jl-nav-main">
+      <a href="#" class="jl-nav-brand">
+        <img style="width: 7rem;" src="6__2_-removebg-preview.png" alt="J-Links Fleet Logo">
+      </a>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="/index.html">Home</a>
-      <a href="#">About Us</a>
-      <a href="/howitworks.html">How It Works</a>
-      <a href="/getcarnow.html">Get Car Now</a>
-      <a href="/contact.html">Contact Us</a>
-      <a href="/more.html">More</a>
+      <div class="jl-nav-desktop">
+        <ul class="jl-nav-links">
+          <li><a href="/index.html" class="jl-nav-link jl-nav-link-active">Home</a></li>
+          <li><a href="/about.html" class="jl-nav-link">About Us</a></li>
+          <li><a href="/howitworks.html" class="jl-nav-link">How It Works</a></li>
+          <li><a href="/getcarnow.html" class="jl-nav-link">Get Car Now</a></li>
+          <li><a href="/contact.html" class="jl-nav-link">Contact Us</a></li>
+
+          <li class="jl-nav-dropdown">
+            <button class="jl-nav-dropdown-toggle" type="button">
+              More
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+
+            <div class="jl-nav-dropdown-menu">
+              <a href="#">Collision Damage Waiver</a>
+              <a href="#">Rental Agreement</a>
+              <a href="#">Rental Policy</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="jl-nav-cta-wrap">
+        <a href="#" class="jl-nav-cta">Get Car Now</a>
+      </div>
+
+      <button class="jl-nav-mobile-toggle" id="openMenu" aria-label="Open menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
-
-    <a href="#" class="btn primary">Get Car Now</a>
-
-    <div class="hamburger" onclick="toggleMenu()">
-      ☰
-    </div>
   </div>
-</header>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="jl-nav-overlay" id="mobileOverlay"></div>
+
+  <!-- MOBILE SIDEBAR -->
+  <aside class="jl-nav-sidebar" id="mobileSidebar">
+    <div class="jl-nav-sidebar-top">
+      <a href="#" class="jl-nav-sidebar-brand">
+        <img style="width: 7rem;" src="6__2_-removebg-preview.png" alt="J-Links Fleet Logo">
+      </a>
+
+      <button class="jl-nav-close" id="closeMenu" aria-label="Close menu" type="button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <nav class="jl-nav-sidebar-menu">
+      <a href="/index.html" class="jl-nav-sidebar-link jl-nav-sidebar-link-active">Home</a>
+      <a href="/about.html" class="jl-nav-sidebar-link">About Us</a>
+      <a href="/howitworks.html" class="jl-nav-sidebar-link">How It Works</a>
+      <a href="/getcarnow.html" class="jl-nav-sidebar-link">Get Car Now</a>
+      <a href="/contact.html" class="jl-nav-sidebar-link">Contact Us</a>
+
+      <div class="jl-nav-sidebar-dropdown">
+        <button class="jl-nav-sidebar-dropdown-toggle" id="mobileDropdownBtn" type="button">
+          <span>More</span>
+          <span class="jl-nav-sidebar-dropdown-icon">
+            <i class="fa-solid fa-angle-down" id="mobileDropdownArrow"></i>
+          </span>
+        </button>
+
+        <div class="jl-nav-sidebar-dropdown-menu" id="mobileDropdownContent">
+          <a href="#">Collision Damage Waiver</a>
+          <a href="#">Rental Agreement</a>
+          <a href="#">Rental Policy</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </nav>
+  </aside>
 
 
 <section class="about-hero">
@@ -178,5 +245,6 @@
   </div>
 </div>
 
+<script src="/scripts.js"></script>
 </body>
 </html>
