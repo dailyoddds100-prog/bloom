@@ -122,7 +122,156 @@
   </div>
 </section>
 
+<section class="app-form-section">
+    <div class="app-form-container">
+      <form class="app-form">
 
+        <div class="app-form-group">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+
+        <div class="app-form-group">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+
+        <div class="app-form-group">
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="app-form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="app-form-group">
+          <label for="dob">Date of birth</label>
+          <input type="text" id="dob" name="dob" />
+        </div>
+
+        <div class="app-form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Street address" />
+        </div>
+
+        <div class="app-form-group">
+          <label for="street2">Street Address</label>
+          <input type="text" id="street2" name="street2" />
+        </div>
+
+        <div class="app-form-row">
+          <div class="app-form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" />
+          </div>
+
+          <div class="app-form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" />
+          </div>
+        </div>
+
+        <div class="app-form-group">
+          <label>Are you a registered Houston rideshare driver with any of the following platforms?</label>
+          <div class="app-checkbox-group">
+            <label class="app-checkbox-item">
+              <input type="checkbox" name="platform" value="lyft" />
+              <span>Lyft</span>
+            </label>
+
+            <label class="app-checkbox-item">
+              <input type="checkbox" name="platform" value="uber" />
+              <span>Uber</span>
+            </label>
+
+            <label class="app-checkbox-item">
+              <input type="checkbox" name="platform" value="gridwise" />
+              <span>Gridwise</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="app-form-group">
+          <label>If you check my option above upload a screenshot of your User star Lyft Profile</label>
+          <div class="app-upload-box">
+            <input type="file" id="profileUpload" name="profileUpload" hidden />
+            <label for="profileUpload" class="app-upload-label">
+              <span class="app-upload-icon">⇪</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="app-form-group">
+          <label>When are you looking to start your rental?</label>
+          <div class="app-checkbox-group">
+            <label class="app-checkbox-item">
+              <input type="checkbox" name="startTime" value="immediately" />
+              <span>Immediately</span>
+            </label>
+
+            <label class="app-checkbox-item">
+              <input type="checkbox" name="startTime" value="week" />
+              <span>Within this week</span>
+            </label>
+
+            <label class="app-checkbox-item">
+              <input type="checkbox" name="startTime" value="month" />
+              <span>Within this month</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="app-form-group">
+          <label>Check please your valid drive license here *</label>
+          <div class="app-upload-box">
+            <input type="file" id="licenseUpload" name="licenseUpload" hidden required />
+            <label for="licenseUpload" class="app-upload-label">
+              <span class="app-upload-icon">⇪</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="app-form-group">
+          <label for="hearAbout">How did you hear about us? *</label>
+          <select id="hearAbout" name="hearAbout" required>
+            <option value="">-</option>
+            <option value="google">Google</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="friend">Friend / Referral</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="app-form-group">
+          <label for="whyRent">Why are you need you choose us? *</label>
+          <select id="whyRent" name="whyRent" required>
+            <option value="">-</option>
+            <option value="pricing">Affordable pricing</option>
+            <option value="vehicle">Vehicle quality</option>
+            <option value="availability">Availability</option>
+            <option value="support">Support</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="app-form-disclaimer">
+          <label class="app-checkbox-item app-terms-check">
+            <input type="checkbox" required />
+            <span>
+              By providing your phone number, you agree to receive automated recurring text messages from Bloom Rideshare and JNL Auto LLC.
+              Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase.
+              Message frequency varies. <u>Messaging Terms</u> and <u>Messaging Privacy Policy</u> apply.
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="app-submit-btn">Get Your Car Now</button>
+      </form>
+    </div>
+  </section>
 
 <section class="payday-cta">
   <div class="payday-cta__inner">

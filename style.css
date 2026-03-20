@@ -402,6 +402,431 @@ body {
   transition: opacity 0.4s ease;
 }
 
+.jl-contact-info-section {
+  padding: 70px 20px;
+  background: #f3f3f3;
+}
+
+.jl-contact-info-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.jl-contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.jl-contact-info-card {
+  border-radius: 18px;
+  padding: 38px 25px 34px;
+  text-align: center;
+  min-height: 236px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jl-contact-info-red {
+  background: #a30814;
+  color: #fff;
+}
+
+.jl-contact-info-black {
+  background: #000;
+  color: #fff;
+}
+
+.jl-contact-info-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 22px;
+  color: #fff;
+}
+
+.jl-contact-info-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.jl-contact-info-line {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  margin: 0 auto 18px;
+}
+
+.jl-contact-info-card p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin: 0 0 4px;
+  color: #fff;
+}
+
+.jl-contact-info-card p strong {
+  font-weight: 700;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .jl-contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jl-contact-info-card {
+    min-height: auto;
+    padding: 34px 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .jl-contact-info-section {
+    padding: 50px 15px;
+  }
+
+  .jl-contact-info-card {
+    border-radius: 14px;
+    padding: 30px 18px;
+  }
+
+  .jl-contact-info-icon {
+    font-size: 2.1rem;
+    margin-bottom: 18px;
+  }
+
+  .jl-contact-info-card h3 {
+    font-size: 1rem;
+  }
+
+  .jl-contact-info-card p {
+    font-size: 0.95rem;
+  }
+}
+
+.jl-contact-section {
+  padding: 70px 20px;
+}
+
+.jl-contact-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.jl-contact-top {
+  margin-bottom: 40px;
+}
+
+.jl-contact-top h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.1;
+}
+
+.jl-contact-top p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 780px;
+}
+
+.jl-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* min-height: 460px; */
+  height: 35rem;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.jl-contact-form-wrap {
+  background: #000;
+  padding: 42px 36px 52px;
+}
+
+.jl-contact-form {
+  width: 100%;
+}
+
+.jl-form-group {
+  margin-bottom: 28px;
+}
+
+.jl-form-group label {
+  display: block;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.jl-form-group label span {
+  color: #c20f16;
+}
+
+.jl-form-group input {
+  width: 100%;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  padding: 0 14px;
+  font-size: 1rem;
+  color: #111;
+}
+
+.jl-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #b30d14;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 42px;
+  padding: 0 18px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.jl-submit-btn:hover {
+  background: #8f0a10;
+}
+
+.jl-map-wrap {
+  min-height: 460px;
+  background: #ddd;
+}
+
+#jl-map {
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+}
+
+.app-form-section {
+  padding: 20px 10px 40px;
+}
+
+.app-form-container {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.app-form {
+  width: 100%;
+}
+
+.app-form-group {
+  margin-bottom: 14px;
+}
+
+.app-form-group label {
+  display: block;
+  font-size: 10px;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.app-form-group input,
+.app-form-group select {
+  width: 100%;
+  height: 22px;
+  border: 1px solid #999;
+  outline: none;
+  background: #fff;
+  padding: 0 6px;
+  font-size: 10px;
+  color: #111;
+}
+
+.app-form-group input::placeholder {
+  color: #aaa;
+}
+
+.app-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.app-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 2px;
+}
+
+.app-checkbox-item {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 10px;
+  line-height: 1.4;
+  margin-bottom: 0 !important;
+}
+
+.app-checkbox-item input[type="checkbox"] {
+  width: 11px;
+  height: 11px;
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+.app-upload-box {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.app-upload-label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.app-upload-icon {
+  font-size: 18px;
+  color: #666;
+  line-height: 1;
+}
+
+.app-form-disclaimer {
+  margin: 16px 0 18px;
+}
+
+.app-terms-check span {
+  font-size: 9px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.app-submit-btn {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background: #d91515;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.app-submit-btn:hover {
+  background: #b80f0f;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .app-form-container {
+    max-width: 680px;
+  }
+
+  .app-form-group label,
+  .app-checkbox-item,
+  .app-form-group input,
+  .app-form-group select {
+    font-size: 13px;
+  }
+
+  .app-form-group input,
+  .app-form-group select {
+    height: 42px;
+    padding: 0 12px;
+  }
+
+  .app-upload-box {
+    height: 90px;
+  }
+
+  .app-upload-icon {
+    font-size: 28px;
+  }
+
+  .app-terms-check span {
+    font-size: 11px;
+  }
+
+  .app-submit-btn {
+    height: 46px;
+    font-size: 14px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .app-form-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .jl-contact-top h2 {
+    font-size: 2.4rem;
+  }
+
+  .jl-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jl-map-wrap,
+  #jl-map {
+    min-height: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .jl-contact-section {
+    padding: 50px 15px;
+  }
+
+  .jl-contact-top h2 {
+    font-size: 2rem;
+  }
+
+  .jl-contact-top p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .jl-contact-form-wrap {
+    padding: 28px 20px 38px;
+  }
+
+  .jl-form-group label {
+    font-size: 1rem;
+  }
+
+  .jl-form-group input {
+    height: 42px;
+  }
+
+  .jl-map-wrap,
+  #jl-map {
+    min-height: 330px;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .jl-nav-topbar {

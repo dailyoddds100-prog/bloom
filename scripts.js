@@ -49,6 +49,51 @@ setInterval(() => {
     textElement.style.opacity = 1;
   }, 400);
 }, 1500);
+const address = "24200 Via Mazzini Way, Suite 209, Richmond TX 77406";
+
+const map = L.map("jl-map").setView([29.65, -95.75], 12);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap contributors",
+}).addTo(map);
+
+// Geocode the address using Nominatim
+fetch(
+  `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`
+)
+  .then((response) => response.json())
+  .then((data) => {
+    if (data && data.length > 0) {
+      const lat = parseFloat(data[0].lat);
+      const lon = parseFloat(data[0].lon);
+
+      map.setView([lat, lon], 16);
+
+      L.marker([lat, lon])
+        .addTo(map)
+        .bindPopup(`
+          <strong>J-Links Fleet</strong><br>
+          ${address}
+        `)
+        .openPopup();
+    } else {
+      console.error("Address not found.");
+    }
+  })
+  .catch((error) => {
+    console.error("Map geocoding error:", error);
+  });
+
+  const fileInputs = document.querySelectorAll('input[type="file"]');
+
+  fileInputs.forEach((input) => {
+    input.addEventListener("change", function () {
+      const label = this.nextElementSibling;
+      if (this.files.length > 0) {
+        label.innerHTML = `<span class="app-upload-icon">${this.files[0].name}</span>`;
+      }
+    });
+  });
 document.addEventListener("DOMContentLoaded", function () {
     const faqItems = document.querySelectorAll(".faq-item");
 

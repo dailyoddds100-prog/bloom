@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
 </head>
 <body>
  <!-- TOP BAR -->
@@ -122,7 +126,83 @@
   </div>
 </section>
 
+ <section class="jl-contact-section">
+    <div class="jl-contact-container">
+      <div class="jl-contact-top">
+        <h2>Get in Touch</h2>
+        <p>
+          Ready to start driving? Need more details? We’re here to guide you every
+          step of the way. Contact us and let’s get you behind the wheel fast.
+        </p>
+      </div>
 
+      <div class="jl-contact-grid">
+        <!-- Left Form -->
+        <div class="jl-contact-form-wrap">
+          <form class="jl-contact-form">
+            <div class="jl-form-group">
+              <label for="jl-name">Name</label>
+              <input type="text" id="jl-name" name="name" />
+            </div>
+
+            <div class="jl-form-group">
+              <label for="jl-email">Email <span>*</span></label>
+              <input type="email" id="jl-email" name="email" required />
+            </div>
+
+            <div class="jl-form-group">
+              <label for="jl-phone">Phone Number</label>
+              <input type="text" id="jl-phone" name="phone" />
+            </div>
+
+            <button type="submit" class="jl-submit-btn">Submit</button>
+          </form>
+        </div>
+
+        <!-- Right Map -->
+        <div class="jl-map-wrap">
+          <div id="jl-map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="jl-contact-info-section">
+  <div class="jl-contact-info-container">
+    <div class="jl-contact-info-grid">
+
+      <div class="jl-contact-info-card jl-contact-info-red">
+        <div class="jl-contact-info-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <h3>Visit our office</h3>
+        <span class="jl-contact-info-line"></span>
+        <p>24200 Via Mazzini Way, Suite 209</p>
+        <p><strong>Richmond, Texas, US</strong></p>
+      </div>
+
+      <div class="jl-contact-info-card jl-contact-info-black">
+        <div class="jl-contact-info-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+        <h3>Mail Us</h3>
+        <span class="jl-contact-info-line"></span>
+        <p>crownlineht@gmail.com</p>
+        <p>admin@houstonridesharecar.com</p>
+      </div>
+
+      <div class="jl-contact-info-card jl-contact-info-red">
+        <div class="jl-contact-info-icon">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <h3>Call Us</h3>
+        <span class="jl-contact-info-line"></span>
+        <p><strong>+1 (346) 637-9910</strong></p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section class="payday-cta">
   <div class="payday-cta__inner">
@@ -209,6 +289,7 @@
   </div>
 </div>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="/scripts.js"></script>
 </body>
 </html>
